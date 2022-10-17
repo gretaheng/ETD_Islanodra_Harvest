@@ -1,6 +1,6 @@
 # ETD_Islanodra_Harvest
 
-Before running any scripts, one needs to maker sure there are three folders in the same directory as the python scripts: idfiles, single_xml, merged_pre_upload, and final_output. 
+Before running any scripts, one needs to maker sure there are four folders in the same directory as the python scripts: idfiles, single_xml, merged_pre_upload, and final_output. 
 
 - idfiles: Have two TXT files, one is id_bf.txt (hold downloaded ids), the other one is id_new_date.txt (hold ids to be downloaded)
 - single_xml: Hold ETD XML records to be downloaded
