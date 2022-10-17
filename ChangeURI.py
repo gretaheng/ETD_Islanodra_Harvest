@@ -1,8 +1,8 @@
 import sys
 import xml.etree.ElementTree as ET
 
-def go(fp):
-    tree = ET.parse(fp, outputp)
+def go(fp, outputp):
+    tree = ET.parse(fp)
     for child in tree.getroot():
         f_id = child.find("./header/identifier").text.replace("oai:drupal-site.org:sdsu_", "")
         uri = "https://digitallibrary.sdsu.edu/islandora/object/sdsu%3A" + f_id
@@ -13,7 +13,7 @@ def go(fp):
             mods = child.find("./metadata/mods")
             ue = ET.SubElement(mods, "identifier", type="uri")
             ue.text = uri
-    tree.write('outputp')
+    tree.write(outputp)
 
 if __name__ == "__main__":
     go(sys.argv[1], sys.argv[2])
