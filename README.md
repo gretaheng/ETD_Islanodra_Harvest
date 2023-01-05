@@ -9,9 +9,9 @@ Before running any scripts, one needs to maker sure there are four folders in th
 
 
 Three scripts are included in this folder. 
-1. HarvestFromIslandora.py and ChangeURI.py are for batch data harvest and normalization. They should be used for periodical updates.
+- HarvestFromIslandora.py and ChangeURI.py are for batch data harvest and normalization. They should be used for periodical updates.
 
-- HarvestFromIslandora.py: This file check for new ETD records in Islandora, download new records, and create one merged XML record in the merged_pre_upload folder. To run this script, run the following line in the command "python (path of this script) last_page_number_of_ETD_collection_in_Islandora full_path_of_the_folder_that_holds_the_four_folders_above date." For example: python "F:/COM/2022/ETD_new/HarvestFromIslandora.py" 530 "F:/COM/2022/ETD_new" "20221128" 
+  - HarvestFromIslandora.py: This file check for new ETD records in Islandora, download new records, and create one merged XML record in the merged_pre_upload folder. To run this script, run the following line in the command "python (path of this script) last_page_number_of_ETD_collection_in_Islandora full_path_of_the_folder_that_holds_the_four_folders_above date." For example: python "F:/COM/2022/ETD_new/HarvestFromIslandora.py" 530 "F:/COM/2022/ETD_new" "20221128" 
 
 
-- ChangeURI.py: After manual validating the merged XML file, update the Identifier[@type=url] element for each record, which will be the access method for users. To run this script, run the following line in the command "python (path of this script) full_path_of_the_merged_xml_in_the_merged_pre_upload_folder full_path_of_the_new_XML_(should be in the final_output folder)." For example: python "F:/COM/2022/ETD_new/ChangeURI.py" "F:/COM/2022/ETD_new/merged_pre_upload/output20221128.xml" "F:/COM/2022/ETD_new/final_output/final20221128.xml"
+  - ChangeURI.py: After manual validating the merged XML file, update the Identifier[@type=url] element for each record, which will be the access method for users. To run this script, run the following line in the command "python (path of this script) full_path_of_the_merged_xml_in_the_merged_pre_upload_folder full_path_of_the_new_XML_(should be in the final_output folder)." For example: python "F:/COM/2022/ETD_new/ChangeURI.py" "F:/COM/2022/ETD_new/merged_pre_upload/output20221128.xml" "F:/COM/2022/ETD_new/final_output/final20221128.xml"
