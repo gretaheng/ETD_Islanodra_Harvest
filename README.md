@@ -15,3 +15,5 @@ Three scripts are included in this folder.
 
 
   - ChangeURI.py: After manual validating the merged XML file, update the Identifier[@type=url] element for each record, which will be the access method for users. To run this script, run the following line in the command "python (path of this script) full_path_of_the_merged_xml_in_the_merged_pre_upload_folder full_path_of_the_new_XML_(should be in the final_output folder)." For example: python "F:/COM/2022/ETD_new/ChangeURI.py" "F:/COM/2022/ETD_new/merged_pre_upload/output20221128.xml" "F:/COM/2022/ETD_new/final_output/final20221128.xml"
+
+- HarvestSelectedRecords.py is for selected records harvest and merge
