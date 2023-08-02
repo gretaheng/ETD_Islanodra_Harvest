@@ -16,7 +16,7 @@ def harvest_id(pagenum):
     pagenum = int(pagenum)
     all_id = []
     num = 0
-    webbase = "https://digitallibrary.sdsu.edu/islandora/object/sdsu%3A4?page="
+    webbase = "https://fake?page="
     while num < pagenum:
         weburl = webbase + str(num)
         page = requests.get(weburl)
